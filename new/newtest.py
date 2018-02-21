@@ -1,6 +1,6 @@
 import facebook
 import requests
-
+import sqlite3
 
 def check_exist_user_by_id(file_witd_ids):
     out = open('out_ids.txt', 'w')
