@@ -2,6 +2,11 @@ import facebook
 import requests
 import sqlite3
 
+conn = sqlite3.connect(ids.db)#почему NameError: name 'ids' is not defined
+cursor = conn.cursor()
+
+
+cursor.execute("""CREATE TABLE ids (ids, exists)   """)
 def check_exist_user_by_id(file_witd_ids):
     out = open('out_ids.txt', 'w')
     graph = facebook.GraphAPI('1938851329475559|9N7KF0F4LokFujG_oTibHwz3YwM')
