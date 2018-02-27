@@ -22,10 +22,21 @@ def check_exist_user_by_id(db_witd_ids):
      insert into users values ('4', 'null');
      insert into users values ('nasksadj.masd', 'null');
      insert into users values ('501012028', 'null');
+     insert into users values ('sdfwgeop', 'null');
     """)
-    """out = open('out_ids.txt', 'w')"""
+    con.commit()
+    ids1 = open('ids1.txt','w')
+    cur.execute('SELECT * FROM users')
+    while True:
+        row = cur.fetchone()
+        if row == None:
+            break
+        ids1.write(row[0])
+        ids1.write("\n")
+    out = open('out_ids.txt', 'w')
     graph = facebook.GraphAPI('1938851329475559|9N7KF0F4LokFujG_oTibHwz3YwM')
-    with open(db_witd_ids, 'r') as f:
+    ids1.close()
+    with open('ids1.txt', 'r') as f:
         ids = f.readlines()
         for id in ids:
             id = id.strip()
@@ -33,19 +44,19 @@ def check_exist_user_by_id(db_witd_ids):
                 try:
                     graph.get_object(id)
                     out.write('Exist {}\n'.format(id))
-                    print(id)
+                    #print(id)
                 except Exception as e:
                     out.write('Not Exist {}\n'.format(id))
-                    print(id)
-                    print(e)
+                   # print(id)
+                    #print(e)
             else:
                 resp = requests.get('https://www.facebook.com/{}'.format(id))
                 if 'не найдена' in resp.text:
                     out.write('Not Exist {}\n'.format(id))
-                    print(id)
+                   # print(id)
                 else:
                     out.write('Exist {}\n'.format(id))
-                    print(id)
+                   # print(id)
     con.close()
     out.close()
     return
