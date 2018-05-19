@@ -1,6 +1,7 @@
 import facebook
 import requests
 import sqlite3
+import os
 
 
 def check_exist_user_by_id():

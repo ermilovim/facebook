@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Портфолио</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing">
+    <meta name="author" content="Ivan Ermilov">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/style.css">
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+	<header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Ivan Ermilov" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Иван Ермилов</h1>
+                <h2 class="desc">Слушатель</h2>   
+            </div><!--profile-->
+            <a class="btn btn-cta-primary pull-right" href="#" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        </div><!--container-->
+    </header><!--header-->
+
+    <div class="container sections-wrapper">
+    	<div class="row">
+    		<div class="primary col-md-8 col-sm-12 col-xs-12"><!--main column-->
+				<section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Обо мне</h2>
+                        <div class="content">
+                            <p>На данный момент я учусь на 4 курсе в Академии на факультете прикладной математики. Занимаюсь научной деятельностью в рамках курсовых работ. В прошлых годах изучал произведение линейных рекуррентных последовательностей, в частности, нашел большое количество примеров, опровергающих гипотезу В.И. Нечаева. За что получил публикацию в закрытом вестнике ИКСИ. В этом году занимаюсь изучением криптовалют с целью выявить уязвимости.</p>    
+         
+                            <p>Увлекаюсь игрой в футбол, в который играю с 7 лет. До поступления играл в любительских полупрофессиональных лигах, но участиями в матчах не отметился. Сейчас выступаю в любительских лигах на позиции
+                            <a href="#" onmouseover="showLinkImage('me')" onmouseout="hideLinkImage('me')">вратаря.</a>
+      						<div id="me" style="display: none; position: absolute;">
+       						<img src="assets/images/football.png" alt="me" /></div> В свободное от учебы время увлекаюсь программированием. В период обучения в лингвистическом лицее(с 8 по 11 класс) изучал китайский язык, ездил на стажировку в Шанхай. С 2014 года отец двух дочек.</p>
+                         
+                        </div><!--content-->
+                    </div><!--section-inner-->                 
+                </section><!--section-->
+
+                <section class="study section">
+                	<div class="section-inner">
+                		<h2 class="heading">Успехи в учебе</h2>
+
+                		<div class="content">
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://ru.wikipedia.org/wiki/Криптовалюта" target="_blank">Криптовалюты</a></h3>
+                                <p class="summary">Действительно ли Биткоин анонимен?</p>
+                                <div class="featured-image">
+                                    <a href="https://ru.wikipedia.org/wiki/Криптовалюта" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/bitcoin.jpg" alt="project name" />
+                                    </a>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>Считается что при использовании таких криптовалют, как Биткоин вы гарантировано получаете анонимность. Но это далеко не всегда так. Конечно, вам предоставляется некоторый уровень анонимности, даже скорее псевдонимности(pseudonymity), но при наличии достаточного количества средств вы можете узнать даже конечный IP-адрес пользователя. Например, применительно к системе Биткоин математики <a href="https://arxiv.org/pdf/1612.06747.pdf"> Péter L. Juhász, József Stéger, Dániel Kondor, Gábor Vattay</a>  использовали Байесовский метод для идентифицирования пользователей. Помимо проблем анонимности я изучил другие возможные уязвимости протокола Биткоин. Так, например, Иван Пустогаров из Люксембургского Университета написал <a href="https://arxiv.org/pdf/1410.6079.pdf">статью</a> о слабостях, которые возникают при использовании Биткоина через браузер Тор.</p>
+                                    <p>Подходы к обеспечению защиты персональных данных, в основе которых лежит идея использования доказательств с нулевым разглашением, применяется в криптовалюте ZCash. Именно последнему посвящена настоящая работа. В данной криптовалюте используется протокол zk-SNARKs. Был проведен анализ кривой Баррето-Наерига, которая используется в zk-SNARKs. Для разных параметров кривой посчитана сложность решения задачи дискретного логарифмирования, необходимая для нахождения секретных параметров протокола. Полный отчет о работе можно найти, перейдя по <a href="assets/kursovaya.pdf">ссылке.</a></p>
+                                </div><!--desc-->                        
+                            </div><!--item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                            	 <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/ermilovim/facebook" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/facebook.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/ermilovim/facebook" target="_blank">Facebook</a></h3>
+                                    <p>В рамках дополнительных задач я изучал Python. Мне была поставлена задача написать программу, способная по идентификатору пользователя facebook дать ответ: существует такой пользователь или нет. Данные берутся из базы данных и записываются в нее же. Результаты также должны быть отображены на сайте. Разработка последнего вопроса ведется.</p>                                   
+                                </div>                          
+                            </div>
+                            <hr class="divider" />
+                            <div class="item row">
+                            	 <a class="col-md-4 col-sm-4 col-xs-12" href="assets/LRS.pdf" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/LRS.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="assets/LRS.pdf" target="_blank">Произведение линейных рекуррентных последовательностей.</a></h3>
+                                    <p>На втором и третьем курсе я изучал теорию линейных рекуррент. Из этой большой области я выбрал более узкое направление, а именно - произведение линейных рекуррент. В 1973 году В.И.Нечаев сформулировал гипотезу о ранге произведения линейных рекуррентных последовательностей. В 2005 году Р.В. Богонатов нашел пример, опровергающий данную гипотезу. В своей работе я нашел еще плеяду новых примеров, оровергающих гипотезу.</p>                                   
+                                </div>                          
+                            </div>
+                            <hr class="divider" />
+							<div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="assets/Алгоритм Прюфера.pdf" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/prufer.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="assets/Алгоритм Прюфера.pdf" target="_blank">Алгоритм Прюфера</a></h3>
+                                    <p>Код Прюфера был использован Хайнцем Прюфером при доказательстве формулы Кэли в 1918 году. Алгоритм построения кода Прюфера называют Алгоритмом Прюфера. В учебниках доказательство соответствия деревьев и выборок доказывается не совсем корректно. В своей <a href="assets/Алгоритм Прюфера.pdf">работе</a> я написал полное доказательство корректности работы алгоритма.</p>
+                                </div><!--desc-->                          
+                            </div><!--item-->
+                		</div>
+                	</div>
+                </section>
+                <section class="hobby section">
+                	<div class="section-inner">
+                		<h2 class="header">Хобби и семья</h2>
+                		<div class="content">
+                			<div class="item">
+                				<h3 class="title"> Футбол </h3>
+                				<p class="summary">До поступления в Академию был заявлен за команду "КАИТ-Спорт" третьего по силе дивизиона России по футболу. В силу возраста участвовать в матчах не приходилось. С командой округа занимал первые места в окружных и районных соревнованиях.</p>
+                				<p class="summary">Долгое время тренировался в ДС "Содружество". С командой Содружества участвовал во множестве любительских лиг. На данный момент выступаю в любительской лиге "РусФут Коньково" за команду "Эвертон" на позиции вратаря.</p>
+                			</div>
+                			<div class="item">
+                				<h3 class="title"> Программирование </h3>
+                				<p class="summary">До поступления в Академию умел писать только самые простые программы в Pascal ABC. После поступления выяснилось, что хоть и нашей специальности для работы программирование жизненно необходимо, преподавалось оно на достаточно низком уровне.</p>
+                				<p class="summary">В связи с чем я начал уделять программированию часть свободного времени, вт ом числе в рамках подготовки к курсовым работам. Как итог, я получил достаточно неплохой навык программирования на C++. Следующим этапом для меня станет овладевание навыками разработки сайта. Также, имею представление о ассемблере, поскольку в академии был краткий курс из небольшого числа занятий по нему.</p>
+                			</div>
+                			<div class="item">
+                				<h3 class="title">Семья</h3>
+                				<img src="assets/images/children.jpg" alt="children">
+                				<p class="summary">Слева-Евгения, справа-Ксения. Родились 05.10.2014. Сейчас уже ходим в садик.</p>
+                			</div>
+                		</div>
+                	</div>
+                </section>
+    		</div><!--primary-->
+    		<div class="secondary col-md-4 col-sm-12 col-xs-12">
+    			<aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Контакты</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Москва, Россия</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">ermilovim@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://github.com/ermilovim">GitHub</a></li>
+                            </ul>
+                        </div><!--content-->  
+                    </div><!--section-inner-->                 
+                </aside><!--aside-->
+                <aside class="skills aside section">
+                	<div class="section-inner">
+                		<h2 class="heading">Умения</h2>
+                		<div class="content">
+                			<div class="skillset">
+                				<div class="item">
+                					  <h3 class="level-title">Cryptography<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
+                				</div>
+                				<div class="item">
+                					  <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
+                				</div>
+                				<div class="item">
+                					  <h3 class="level-title">HTML,CSS,Javascript<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Adequately</span></h3>
+                				</div>
+                				<div class="item">
+                					  <h3 class="level-title">Maths<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
+                				</div>
+                 				<div class="item">
+                					  <h3 class="level-title">Football<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Excellent</span></h3>
+                				</div>               				
+                			</div>
+                		</div>
+                	</div>
+                </aside>
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Образование</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>Среднее образование</h3>
+                                <h4 class="university">Школа "Маленький Принц" <span class="year">(2003-2006)</span></h4>
+                                <h4 class="university">ГБОУ СОШ №794 <span class="year">(2006-2010)</span></h4>
+                                <h4 class="university">Лингвистический лицей №1555 при МГЛУ <span class="year">(2010-2013)</span></h4>
+                                <h4 class="university">ГБОУ СОШ №794 <span class="year">(2013-2014)</span></h4>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Высшее образование</h3>
+                                <h4 class="university">В/Ч №33965<span class="year">(2014-по настоящее время)</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Языки</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Русский:</strong></span>
+                                    <p><span class="level">Native Speaker <br class="visible-xs"/><p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p> </span></p>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Английский English:</strong></span>
+                                    <p><span class="level">С1(Effective Operational Proficiency)<br class="visible-sm visible-xs"/><p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p></span></p>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Китайский 中文:</strong></span>
+                                    <p><span class="level">A2(Waystage))<br class="visible-sm visible-xs"/><p><i class="fa fa-star"></i> <i class="fa fa-star-half"></i></p></span></p>
+                                </li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside>
+    		</div>
+    	</div>
+    </div>
+	<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
