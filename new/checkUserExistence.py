@@ -9,11 +9,11 @@ import sys
 
 
 def check_exist_user_by_id():
-    con = sqlite3.connect('users.db')
+    con = sqlite3.connect('YOUR DATABASE NAME')
     cur = con.cursor()
     cur.execute('CREATE TABLE IF NOT EXISTS users (id VARCHAR(100), existence VARCHAR(15))')
     con.commit()
-    ids = open("ids", 'r').readlines()
+    ids = open("INPUT FILE WITH IDS", 'r').readlines()
     for id in ids:
         id = id.strip()
         cur.execute("insert into users values (?, null)", [id])
